@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<link rel="stylesheet" href="style.css">-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Style the header */
+    header {
+        background-color: #f1f3f4;
+        padding: 5px;
+        text-align: left;
+        font-size: 14px;
+        color: black;
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 30%;
+        height: 300px; /* only for demonstration, should be removed */
+        background: #ccc;
+        padding: 20px;
+    }
+    
+    /* Style the list inside the menu */
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    article {
+        float: left;
+        padding: 20px;
+        width: 70%;
+        background-color: #e8f4f4;
+        height: 300px; /* only for demonstration, should be removed */
+    }
+    
+    /* Clear floats after the columns */
+    section::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+	bottom:0;
+        background-color: #f1f3f4;
+        padding: 2px;
+        text-align: right;
+        color: black;
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+        nav, article {
+        width: 100%;
+        height: auto;
+        }
+    }
+    img {
+	 position: fixed;
+         bottom: 7;
+         right: 0;
+         width: 200px;
+         height: 300px;
+         
+    }
+    </style>
+</head>
+<body>
+    <img src="C:/Users/student/Downloads/photo-output.jpg" alt="Shaafiqe" width = "200" height = "300">
+    
+    <header>
+    <h2>Shaafiqe M</h2>
+    <ul>
+        <li><a href="#">KNOW ABOUT ME</a></li>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="#">AWARDS</a></li>
+        <li><a href="#">SAY HI!</a></li>
+    </ul>
+
+    </header>
+    <section>
+    <article>
+	<h2>SHAAFIQE M</h2>
+	<p>As a highly motivated and goal-oriented individual, I am dedicated to advancing my knowledge and skills in the field of Artificial Intelligence and Data Science. With a natural aptitude for learning and a passion for innovation, I have developed the ability to quickly pick up new concepts and approaches, and I thrive on the challenge of applying them in real-world settings.
+
+		Driven by a strong sense of grit and determination, I am committed to continuously upgrading my expertise in the areas of Data Science and AI, and I am always eager to explore new techniques and methodologies. I approach every project and task with a creative and experimental mindset, and I am always open to new opportunities to learn and grow.
+
+		With a proven track record of success in academic and professional settings, I am confident in my ability to excel in any role that requires analytical thinking, problem-solving, and a deep understanding of cutting-edge technologies. I am excited to leverage my skills and experience to contribute to the success of any team, and I look forward to the challenges and opportunities that lie ahead.
+        </p>
+    </article>
+    </section>
+    
+
+    <footer>
+    <p>shaafiqe@gmail.com</p>
+    </footer>
+
+	
+    
+</body>
+</html>
